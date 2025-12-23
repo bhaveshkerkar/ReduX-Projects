@@ -1,6 +1,8 @@
+const { act } = require("react");
 const redux = require("redux");
 
-// Initial state
-const initialState = {
-  count: 0,
+const reducer = (store, action) => {
+  return store;
 };
+
+const store = redux.createStore(() => {});

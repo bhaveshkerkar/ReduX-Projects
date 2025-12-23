@@ -4,7 +4,11 @@ const INITIAL_VALUE = {
   counter: 0,
 };
 const reducer = (store = INITIAL_VALUE, action) => {
-  return { counter: store.counter + 1 };
+  let newStore = store;
+  if (action.type === "INCREMENT") {
+    newStore = { counter: store.counter + 1 };
+  }
+  return newStore;
 };
 
 const store = redux.createStore(reducer);

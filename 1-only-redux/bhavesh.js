@@ -1,4 +1,3 @@
-const { act } = require("react");
 const redux = require("redux");
 
 const INITIAL_VALUE = {

@@ -1,7 +1,7 @@
 const redux = require("redux");
 
 const INITIAL_VALUE = {
-  counter: 4,
+  counter: 0,
 };
 const reducer = (store = INITIAL_VALUE, action) => {
   let newStore = store;
@@ -21,17 +21,5 @@ const subsciber = () => {
 };
 
 store.subscribe(subsciber);
-
-store.dispatch({ type: "INCREMENT" });
-
-store.dispatch({ type: "INCREMENT" });
-
-store.dispatch({ type: "INCREMENT" });
-
-store.dispatch({ type: "INCREMENT" });
-
-store.dispatch({ type: "INCREMENT" });
-
-store.dispatch({ type: "INCREMENT" });
 
 store.dispatch({ type: "INCREMENT" });

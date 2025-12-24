@@ -1,7 +1,7 @@
 const redux = require("redux");
 
 const INITIAL_VALUE = {
-  counter: 0,
+  counter: 3,
 };
 const reducer = (store = INITIAL_VALUE, action) => {
   let newStore = store;

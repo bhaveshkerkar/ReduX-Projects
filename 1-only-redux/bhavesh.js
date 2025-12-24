@@ -23,3 +23,7 @@ const subsciber = () => {
 store.subscribe(subsciber);
 
 store.dispatch({ type: "INCREMENT" });
+
+store.dispatch({ type: "INCREMENT" });
+
+store.dispatch({ type: "INCREMENT" });

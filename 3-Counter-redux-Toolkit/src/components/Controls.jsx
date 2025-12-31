@@ -62,7 +62,7 @@ const Controls = () => {
           className="btn btn-warning"
           onClick={handlePrivacyToggle}
         >
-          Privacy Toggleeeeeeeeeeee
+          Privacy Toggleeeeeeeeeeeeeee
         </button>
       </div>
       <div className="d-grid gap-2 d-sm-flex justify-content-sm-center control-row">

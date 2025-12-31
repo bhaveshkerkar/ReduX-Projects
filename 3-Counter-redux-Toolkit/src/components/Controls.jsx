@@ -47,7 +47,7 @@ const Controls = () => {
           className="btn btn-primary"
           onClick={handleIncrement}
         >
-          +1
+          +12
         </button>
 
         <button

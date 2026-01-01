@@ -47,7 +47,7 @@ const Controls = () => {
           className="btn btn-primary"
           onClick={handleIncrement}
         >
-          +12
+          +1
         </button>
 
         <button
@@ -55,14 +55,14 @@ const Controls = () => {
           className="btn btn-success"
           onClick={handleDecrement}
         >
-          -1111111
+          -1
         </button>
         <button
           type="button"
           className="btn btn-warning"
           onClick={handlePrivacyToggle}
         >
-          Privacy Toggleeeeeeeeeeeeeeeee
+          Privacy Toggle
         </button>
       </div>
       <div className="d-grid gap-2 d-sm-flex justify-content-sm-center control-row">

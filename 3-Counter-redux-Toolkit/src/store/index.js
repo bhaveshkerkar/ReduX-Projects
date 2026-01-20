@@ -48,4 +48,5 @@ const counterStore = configureStore({
   },
 });
 
+export const counterActions = counterSlice.actions;
 export default counterStore;

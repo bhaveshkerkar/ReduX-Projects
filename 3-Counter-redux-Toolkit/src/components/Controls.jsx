@@ -19,13 +19,12 @@ const Controls = () => {
   };
 
   const handleAdd = () => {
-    inputElement.current.value;
-    dispatch({
-      type: "ADD",
-      payload: {
+    dispatch(
+      counterActions.add({
         num: inputElement.current.value,
-      },
-    });
+      }),
+    );
+
     inputElement.current.value = "";
   };
 

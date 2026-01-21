@@ -1,6 +1,6 @@
 import { useDispatch } from "react-redux";
-import { counterActions } from "../store/index.js";
-import { privacyActions } from "../store/index.js";
+import { counterActions } from "../store/Counter";
+import { privacyActions } from "../store/privacy.js";
 import { useRef } from "react";
 
 const Controls = () => {
@@ -45,7 +45,7 @@ const Controls = () => {
           className="btn btn-success"
           onClick={handleDecrement}
         >
-          -1
+          -2
         </button>
         <button
           type="button"

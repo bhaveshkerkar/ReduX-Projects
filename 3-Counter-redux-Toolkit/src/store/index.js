@@ -55,6 +55,7 @@ const privacySlice = createSlice({
 const counterStore = configureStore({
   reducer: {
     counter: counterSlice.reducer,
+    privacy: privacySlice.reducer,
   },
 });
 

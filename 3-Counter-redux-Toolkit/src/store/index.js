@@ -17,10 +17,20 @@ const counterSlice = createSlice({
       state.counterVal--;
     },
     add: (state, action) => {
-      state.counterVal += Number(action.payload.num);
+      state.counterVal += Number(action.payload);
     },
     subtract: (state, action) => {
-      state.counterVal -= Number(action.payload.num);
+      state.counterVal -= Number(action.payload);
+    },
+  },
+});
+
+const privacySlice = createSlice({
+  name: "privacy",
+  initialState: false,
+  reducers: {
+    toggle: (state) => {
+      state.privacy = !state;
     },
   },
 });
@@ -49,4 +59,5 @@ const counterStore = configureStore({
 });
 
 export const counterActions = counterSlice.actions;
+export const privacyActions = privacySlice.actions;
 export default counterStore;

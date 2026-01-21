@@ -19,23 +19,12 @@ const Controls = () => {
   };
 
   const handleAdd = () => {
-    dispatch(
-      counterActions.add({
-        num: inputElement.current.value,
-      }),
-    );
-
+    dispatch(counterActions.add(inputElement.current.value));
     inputElement.current.value = "";
   };
 
   const handleSubtract = () => {
-    inputElement.current.value;
-    dispatch({
-      type: "SUBTRACT",
-      payload: {
-        num: inputElement.current.value,
-      },
-    });
+    dispatch(counterActions.subtract(inputElement.current.value));
     inputElement.current.value = "";
   };
 

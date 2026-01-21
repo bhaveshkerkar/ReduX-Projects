@@ -45,7 +45,7 @@ const Controls = () => {
           className="btn btn-success"
           onClick={handleDecrement}
         >
-          -2
+          -1
         </button>
         <button
           type="button"
